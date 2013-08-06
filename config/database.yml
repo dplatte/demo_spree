@@ -1,0 +1,19 @@
+common: &common
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: dustinplatte
+  password: Waseca77
+
+development:
+  <<: *common
+  database: demo_spree_development
+
+test:
+  <<: *common
+  database: demo_spree_test
+  
+production:
+  <<: *common
+  database: demo_spree_production
