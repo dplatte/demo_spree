@@ -65,7 +65,7 @@ DemoSpree::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  default_url_options {
+  default_url_options = {
     host: 'think602-demo-spree2.herokuapp.com'
   }
 
